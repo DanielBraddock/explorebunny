@@ -10,6 +10,9 @@
 #'
 #' @examples
 #' hello()
+#' hello("you")
+#' hello("hello")
+#' hello("Mr Sandman")
 hello <- function(name = "world") {
   msg <- paste0("Hello, ", name, "!")
   return(msg)

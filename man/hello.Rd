@@ -13,7 +13,7 @@ hello(name = "world")
 A greeting to "name"
 }
 \description{
-hello
+Greets whoever you ask it to greet via name
 }
 \examples{
 hello()

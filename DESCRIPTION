@@ -1,15 +1,12 @@
-Package: explorebunny
 Type: Package
-Title: What the Package Does (Title Case)
+Package: explorebunny
+Title: Exploratory Data Analysis (Yet another EDA package eh)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
+Authors@R: person("Daniel", "Braddock", email = "nobody@noreply.com", role = c("cre", "aut"))
+Description: Not a lot right now to be honest!
+License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
 RoxygenNote: 7.3.1

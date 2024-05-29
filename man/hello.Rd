@@ -17,4 +17,7 @@ Greets whoever you ask it to greet via name
 }
 \examples{
 hello()
+hello("you")
+hello("hello")
+hello("Mr Sandman")
 }

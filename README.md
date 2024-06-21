@@ -8,19 +8,19 @@ The goal of explorebunny is to facilitate data exploration.
 You can install the development version of explorebunny from
 [GitHub](https://github.com/) with:
 
-```{r}
+``` r
 # install.packages("devtools")
 devtools::install_github("DanielBraddock/explorebunny")
 #> Using GitHub PAT from the git credential store.
-#> Skipping install of 'explorebunny' from a github remote, the SHA1 (03d97092) has not changed since last install.
+#> Skipping install of 'explorebunny' from a github remote, the SHA1 (b4d3cf21) has not changed since last install.
 #>   Use `force = TRUE` to force installation
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+### Exploring missingness
 
-```{r}
+``` r
 library(explorebunny)
 iris2 <- iris
 iris2[iris2$Species == "setosa", "Species"] <- NA_character_

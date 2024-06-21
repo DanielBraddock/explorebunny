@@ -19,7 +19,7 @@
 #' iris2[iris2$Species == "setosa", "Species"] <- NA_character_
 #' iris2[iris2$Sepal.Length < 5.1, "Sepal.Length"] <- NA_real_
 #' iris2[iris2$Sepal.Width > 2.8, "Sepal.Width"] <- NA_real_
-#' iris2 |> plot_na()
+#' iris2 |> explore_na()
 #'
 explore_na <- function(df
                        , return = "plot"
@@ -44,7 +44,7 @@ explore_na <- function(df
       , p_missing = .data$n_missing / n
     ) |>
     mutate(
-      column = .data$column |> factor() |> fct_reorder(n_missing)
+      column = .data$column |> factor() |> fct_reorder(.data$n_missing)
       , rating = case_when(
         p_missing < colour_thresholds[1] ~ "green"
         , p_missing < colour_thresholds[2] ~ "orange"

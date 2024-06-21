@@ -2,12 +2,18 @@ Type: Package
 Package: explorebunny
 Title: Exploratory Data Analysis (Yet another EDA package eh)
 Version: 0.1.0
-Authors@R: person("Daniel", "Braddock", email = "nobody@noreply.com", role = c("cre", "aut"))
-Description: Not a lot right now to be honest!
+Authors@R: 
+    person("Daniel", "Braddock", , "nobody@noreply.com", role = c("cre", "aut"))
+Description: Explore datasets (just how I like it).
 License: MIT + file LICENSE
+URL: https://danielbraddock.github.io/explorebunny/
+Imports:
+    dplyr, 
+    forcats, 
+    ggplot2,
+    rlang
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 RoxygenNote: 7.3.1
-URL: https://danielbraddock.github.io/explorebunny/

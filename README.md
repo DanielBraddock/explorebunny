@@ -8,7 +8,7 @@ The goal of explorebunny is to facilitate data exploration.
 You can install the development version of explorebunny from
 [GitHub](https://github.com/) with:
 
-``` r
+```{r}
 # install.packages("devtools")
 devtools::install_github("DanielBraddock/explorebunny")
 #> Using GitHub PAT from the git credential store.
@@ -20,7 +20,7 @@ devtools::install_github("DanielBraddock/explorebunny")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r}
 library(explorebunny)
 iris2 <- iris
 iris2[iris2$Species == "setosa", "Species"] <- NA_character_

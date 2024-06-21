@@ -58,15 +58,28 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can install the development version of explorebunny from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
-<p><code>{r} # install.packages("devtools") devtools::install_github("DanielBraddock/explorebunny") #&gt; Using GitHub PAT from the git credential store. #&gt; Skipping install of 'explorebunny' from a github remote, the SHA1 (03d97092) has not changed since last install. #&gt;   Use `force = TRUE` to force installation</code></p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"DanielBraddock/explorebunny"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Using GitHub PAT from the git credential store.</span></span>
+<span><span class="co">#&gt; Skipping install of 'explorebunny' from a github remote, the SHA1 (b4d3cf21) has not changed since last install.</span></span>
+<span><span class="co">#&gt;   Use `force = TRUE` to force installation</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
-<p><code>{r} library(explorebunny) iris2 &lt;- iris iris2[iris2$Species == "setosa", "Species"] &lt;- NA_character_ iris2 |&gt; explore_na() #&gt; Rows: 150</code></p>
+<div class="section level3">
+<h3 id="exploring-missingness">Exploring missingness<a class="anchor" aria-label="anchor" href="#exploring-missingness"></a>
+</h3>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://danielbraddock.github.io/explorebunny/">explorebunny</a></span><span class="op">)</span></span>
+<span><span class="va">iris2</span> <span class="op">&lt;-</span> <span class="va">iris</span></span>
+<span><span class="va">iris2</span><span class="op">[</span><span class="va">iris2</span><span class="op">$</span><span class="va">Species</span> <span class="op">==</span> <span class="st">"setosa"</span>, <span class="st">"Species"</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA_character_</span></span>
+<span><span class="va">iris2</span> <span class="op">|&gt;</span> <span class="fu"><a href="reference/explore_na.html">explore_na</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 150</span></span></code></pre></div>
 <p><img src="reference/figures/README-example-1.png" width="100%"></p>
 <p>Happy exploring!</p>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">

@@ -50,8 +50,25 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-Explore datasets (just how I like it).
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="explorebunny">explorebunny<a class="anchor" aria-label="anchor" href="#explorebunny"></a>
+</h1></div>
+<p>The goal of explorebunny is to facilitate data exploration.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version of explorebunny from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p><code>{r} # install.packages("devtools") devtools::install_github("DanielBraddock/explorebunny") #&gt; Using GitHub PAT from the git credential store. #&gt; Skipping install of 'explorebunny' from a github remote, the SHA1 (03d97092) has not changed since last install. #&gt;   Use `force = TRUE` to force installation</code></p>
+</div>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<p>This is a basic example which shows you how to solve a common problem:</p>
+<p><code>{r} library(explorebunny) iris2 &lt;- iris iris2[iris2$Species == "setosa", "Species"] &lt;- NA_character_ iris2 |&gt; explore_na() #&gt; Rows: 150</code></p>
+<p><img src="reference/figures/README-example-1.png" width="100%"></p>
+<p>Happy exploring!</p>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">

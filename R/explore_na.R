@@ -15,11 +15,16 @@
 #' @export
 #'
 #' @examples
-#' iris2 <- iris
-#' iris2[iris2$Species == "setosa", "Species"] <- NA_character_
-#' iris2[iris2$Sepal.Length < 5.1, "Sepal.Length"] <- NA_real_
-#' iris2[iris2$Sepal.Width > 2.8, "Sepal.Width"] <- NA_real_
-#' iris2 |> explore_na()
+#' my_data <- data.frame(
+#'   x0 = 1:11
+#'   , x1 = c(NA, 1:10)
+#'   , x2 = c(rep(NA, 2), 1:9)
+#'   , x3 = c(rep(NA, 3), 1:8)
+#'   , x4 = c(rep(NA, 4), 1:7)
+#' )
+#' my_data |> explore_na()
+#' my_data |> explore_na(keep_all = TRUE)
+#' my_data |> explore_na(zoom_in = TRUE)
 #'
 explore_na <- function(df
                        , return = "plot"

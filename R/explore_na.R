@@ -69,7 +69,7 @@ explore_na <- function(df
 
     result <-
       result +
-      scale_fill_manual(values = c("green", "orange", "red")) +
+      scale_fill_manual(values = c("green" = "green", "orange" = "orange", "red" = "red")) +
       theme(legend.position = "none") +
       geom_col() +
       coord_flip()

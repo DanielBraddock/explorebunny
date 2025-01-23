@@ -4,6 +4,7 @@ Title: Exploratory Data Analysis (Yet another EDA package eh)
 Version: 0.1.0
 Authors@R: 
     person("Daniel", "Braddock", , "nobody@noreply.com", role = c("cre", "aut"))
+Author: Daniel Braddock [aut]
 Maintainer: Daniel Braddock <nobody@noreply.com>
 Description: Explore datasets (just how I like it).
 License: MIT + file LICENSE

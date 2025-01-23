@@ -2,8 +2,7 @@ Type: Package
 Package: explorebunny
 Title: Exploratory Data Analysis (Yet another EDA package eh)
 Version: 0.1.0
-Authors@R: 
-    person("Daniel", "Braddock", , "nobody@noreply.com", role = c("cre", "aut"))
+Authors@R: person("Daniel", "Braddock", , "nobody@noreply.com", role = c("cre", "aut"))
 Description: Explore datasets (just how I like it).
 License: MIT + file LICENSE
 URL: https://danielbraddock.github.io/explorebunny/
